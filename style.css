@@ -2,26 +2,32 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: #000; /* Черный фон */
+  background: #ffffff; /* Белый фон, как в коде программиста */
   font-family: "Tilda Sans", Arial, sans-serif;
   font-weight: 500;
   position: relative;
   padding: 10px 0;
+  border-top: 1px solid #eeeeee;    /* Рамка как на сайте-примере */
+  border-bottom: 1px solid #eeeeee; /* Рамка как на сайте-примере */
 }
+
 #marquee-container {
   display: inline-block;
 }
-.marquee-text-item { /* Используем класс */
+
+.marquee-text-item { /* Используем класс, как мы делали ранее */
   display: inline-block;
-  color: #fff;
+  color: #000000; /* Черный цвет текста для белого фона */
   text-decoration: none;
   cursor: pointer;
   margin-right: 40px;
   font-size: 18px;
 }
+
 .marquee-text-item:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 768px) {
   .marquee-text-item {
     font-size: 14px;
