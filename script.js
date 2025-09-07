@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < copies; i++) {
       const link = document.createElement('a');
       link.href = originalHref;
-      link.className = 'marquee-text-item'; // Класс для стилей
+      link.className = 'marquee-text-item';
       link.textContent = originalText;
       container.appendChild(link);
     }
     
-    container.innerHTML += container.innerHTML; // Дублируем для бесшовности
+    container.innerHTML += container.innerHTML;
   }
 
   function animateMarquee() {
@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
         setupMarquee();
-        // Перезапускаем анимацию после изменения размера
-        const totalWidth = container.scrollWidth / 2;
     }, 250);
   });
 });

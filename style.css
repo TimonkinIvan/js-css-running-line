@@ -2,22 +2,20 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: #ffffff; /* Белый фон, как в коде программиста */
+  background: #FFF;
   font-family: "Tilda Sans", Arial, sans-serif;
   font-weight: 500;
   position: relative;
   padding: 10px 0;
-  border-top: 1px solid #eeeeee;    /* Рамка как на сайте-примере */
-  border-bottom: 1px solid #eeeeee; /* Рамка как на сайте-примере */
 }
 
 #marquee-container {
   display: inline-block;
 }
 
-.marquee-text-item { /* Используем класс, как мы делали ранее */
+.marquee-text-item {
   display: inline-block;
-  color: #000000; /* Черный цвет текста для белого фона */
+  color: #000;
   text-decoration: none;
   cursor: pointer;
   margin-right: 40px;
