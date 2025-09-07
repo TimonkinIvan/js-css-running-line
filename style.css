@@ -1,29 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-.marquee-container {
+.running-line {
   width: 100%;
   overflow: hidden;
-  background-color: black;
-  padding: 15px 0;
   white-space: nowrap;
+  background: #FFF;
+  font-family: "Tilda Sans", Arial, sans-serif;
+  font-weight: 500;
+  position: relative;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
-.marquee-content {
+#marquee-container {
   display: inline-block;
-  animation: marquee-animation 25s linear infinite;
 }
-.marquee-content a {
-  color: white;
-  font-size: 16px;
+.marquee-text-item {
+  display: inline-block;
+  color: #000;
   text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 50px;
+  cursor: pointer;
+  margin-right: 40px;
+  font-size: 16px;
 }
-.marquee-container:hover .marquee-content {
-  animation-play-state: paused;
+.marquee-text-item:hover {
+  text-decoration: underline;
 }
-@keyframes marquee-animation {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+@media (max-width: 768px) {
+  .marquee-text-item {
+    font-size: 14px;
+  }
 }
