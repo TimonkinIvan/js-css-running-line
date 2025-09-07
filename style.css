@@ -2,24 +2,22 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: #FFF;
+  background: #000; /* Черный фон */
   font-family: "Tilda Sans", Arial, sans-serif;
   font-weight: 500;
   position: relative;
   padding: 10px 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 #marquee-container {
   display: inline-block;
 }
-.marquee-text-item {
+.marquee-text-item { /* Используем класс */
   display: inline-block;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   margin-right: 40px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .marquee-text-item:hover {
   text-decoration: underline;
