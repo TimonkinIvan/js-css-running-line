@@ -1,42 +1,38 @@
-.running-line {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    background: #FFF;
-    font-family: "Tilda Sans", Arial, sans-serif;
-    font-weight: 500;
-    position: relative;
-    padding: 10px 0;
-    border: 1px solid #eee; /* Добавил рамку для наглядности */
+body {
+  margin: 0;
 }
 
-#marquee-container {
-    display: inline-block;
-    white-space: nowrap;
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  padding: 15px 0;
+  white-space: nowrap;
 }
 
-#marquee-text {
-    display: inline-block;
-    color: #000; /* Изменил цвет на черный для видимости на белом фоне */
-    text-decoration: none;
-    cursor: pointer;
-    margin-right: 40px;
-    font-size: 18px; /* Размер текста по умолчанию */
+.marquee-content {
+  display: inline-block;
+  /* Анимация: имя, длительность, тип, повторение */
+  animation: marquee-animation 25s linear infinite;
 }
 
-#marquee-text:hover {
-    text-decoration: underline;
+.marquee-content a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 50px; /* Отступ между фразами */
 }
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
-    #marquee-text {
-        font-size: 14px; /* Меньший текст на мобильных */
-    }
+.marquee-content:hover {
+    animation-play-state: paused; /* Останавливаем при наведении */
 }
 
-#marquee-text {
-  list-style-type: none;
-  padding-left: 0;
+/* Определение анимации */
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
