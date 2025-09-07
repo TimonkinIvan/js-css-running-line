@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бегущая строка - Пример</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="running-line desktop-running-line">
+        <div id="marquee-container">
+            <a id="marquee-text" href="https://lovefirst.ru/">одежда как признание &emsp;&emsp; одежда как признание &emsp;&emsp; одежда как признание</a>
+        </div>
+    </div>
+
+	•	<script src="./script.js"></script>
+
+</body>
+</html>
